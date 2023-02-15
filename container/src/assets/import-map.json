@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "child1": "http://localhost:4201/main.js",
+    "child3": "http://localhost:4203/main.js"
+  }
+}
