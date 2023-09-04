@@ -1,6 +1,6 @@
 {
   "imports": {
-    "child1": "http://localhost:4201/main.js",
-    "child3": "http://localhost:4203/main.js"
+    "headermfe": "http://localhost:4201/main.js",
+    "domainmfe": "http://localhost:4203/main.js"
   }
 }

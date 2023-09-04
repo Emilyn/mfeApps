@@ -1,1 +1,23 @@
-<p>header page2 works!</p>
+
+<div fxLayout="row" fxLayoutAlign="center center">
+  <span>Login Page</span>
+</div>
+
+<div *ngIf="validate">
+  <!-- If want to add touched in the form must to add custom input event has blur event -->
+  <span *ngIf="loginForm.get('username').touched && !loginForm.get('username').valid">Enter Username</span>
+</div>
+
+<form fxLayout="column" fxLayoutGap="10px" [formGroup]="loginForm">
+
+  <label>Username</label>
+  <common-input formControlName='username' fxFlex="100" placeholder="name"  [attr.autoFocus]="true"></common-input>
+
+  <label>Password</label>
+  <common-input  formControlName='password' fxFlex="100"></common-input>
+
+</form><br>
+
+<div fxLayout="row" fxLayoutAlign="end end">
+  <button (click)="submit()">Submit</button>
+</div>

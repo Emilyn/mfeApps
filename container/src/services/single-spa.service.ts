@@ -32,6 +32,7 @@ export class SingleSpaService {
   }
 
   unmount(appName: string): Observable<unknown> {
+    let app = this.loadedParcels[appName];
     return from(this.loadedParcels[appName].unmount()).pipe(
       tap(() => delete this.loadedParcels[appName])
     );

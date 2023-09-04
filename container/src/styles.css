@@ -1,4 +1,96 @@
-/* You can add global styles to this file, and also import other style files */
+/* Roboto font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Colors */
+:root {
+  --primary-color: #3E54AC;
+  --secondary-color: #655DBB;
+  --light-color: #ECF2FF;
+  --dark-color: #BFACEF;
+  --elevation-1: 0 0 4px rgba(0, 0, 0, 0.2);
+  --elevation-2: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --elevation-3: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Fonts */
 body {
-  font-family: 'Arial';
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  box-shadow: var(--elevation-2);
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header__links {
+  display: flex;
+}
+
+.header__links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Page content */
+.content {
+  padding: 20px;
+  box-shadow: var(--elevation-1);
+  background-color: var(--light-color);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-shadow: var(--elevation-1);
+  background-color: var(--light-color);
+  padding: 10px;
+}
+
+.breadcrumb a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.breadcrumb span {
+  color: var(--secondary-color);
+}
+
+.breadcrumb span[aria-current="page"] {
+  font-weight: bold;
+}
+
+.breadcrumb span:not([aria-current="page"])::after {
+  content: '>';
+  margin: 0 10px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--dark-color);
+  color: #fff;
+  box-shadow: var(--elevation-2);
+}
+
+.footer__text {
+  margin: 0;
 }

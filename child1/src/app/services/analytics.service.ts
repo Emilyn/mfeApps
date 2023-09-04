@@ -26,7 +26,7 @@ export class AnalyticsService {
         extensionConfig: {
           [angularPlugin.identifier]: { router: this.router },
         },
-        enableAutoRouteTracking: false,
+        enableAutoRouteTracking: true,
         autoTrackPageVisitTime: false,
         distributedTracingMode: DistributedTracingModes.W3C,
         enableCorsCorrelation: true,

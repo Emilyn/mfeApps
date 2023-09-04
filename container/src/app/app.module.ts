@@ -1,13 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { APP_INITIALIZER, ErrorHandler, NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouteReuseStrategy } from '@angular/router';
 import { MicroFrontendRouteReuseStrategy } from 'src/services/route-reuse-strategy';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AppConfigService } from 'src/services/app-config.service';
-import { ApplicationinsightsAngularpluginErrorService } from '@microsoft/applicationinsights-angularplugin-js';
-import { InterceptorService } from './interceptors/Interceptor.service';
 const appInitializerFn = (appConfigService: AppConfigService) => {
   return () => {
     return appConfigService.set();
@@ -16,12 +14,13 @@ const appInitializerFn = (appConfigService: AppConfigService) => {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [
     AppConfigService,

@@ -3,7 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { EmptyRouteComponent } from "./empty-route/empty-route.component";
 import { Page1Component } from "./page1/page1.component";
 import { Page2Component } from "./page2/page2.component";
-import { AppComponent } from "./app.component";
+import { APP_BASE_HREF } from "@angular/common";
 
 const routes: Routes = [
   {
@@ -31,5 +31,10 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes, { relativeLinkResolution: "legacy" })],
   exports: [RouterModule],
+  providers: [
+    {
+      provide: APP_BASE_HREF,
+      useValue: "/",
+    }]
 })
 export class AppRoutingModule {}

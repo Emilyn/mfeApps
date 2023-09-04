@@ -6,13 +6,18 @@
 </div>
 
 <main>
+  <nav class="breadcrumb">
+		<a href="#">Home</a> > <a href="#">Category</a> > <span class="active">Page Title</span>
+	</nav>
+
     <ul>
       <li><h2><a routerLink="/header">Header</a></h2></li>
       <li><h2><a routerLink="/domain">Domain</a></h2></li>
     </ul>
-    <section class="child-app">
+    <section class="child-app content">
         <router-outlet></router-outlet>
     </section>
+    <img src="../assets/aid-icon.svg" width="15px" height="15px" [alt]="'add'">
 </main>
 
 
