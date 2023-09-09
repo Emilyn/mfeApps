@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:single-spa": "ng build --prod --deploy-url http://localhost:4203/",
+    "build:single-spa": "ng build --configuration production --deploy-url http://localhost:4203/",
     "serve:single-spa": "ng serve --disable-host-check --port 4203 --deploy-url http://localhost:4203/ --live-reload false"
   },
   "private": true,
@@ -26,7 +26,7 @@
     "single-spa-angular": "^4.9.2",
     "tslib": "^2.0.0",
     "webpack-merge": "^5.8.0",
-    "zone.js": "~0.11.8"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^11.1.1",
