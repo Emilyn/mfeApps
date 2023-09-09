@@ -26,7 +26,9 @@
     "single-spa-angular": "^4.9.2",
     "tslib": "^2.0.0",
     "webpack-merge": "^5.8.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "@microsoft/applicationinsights-angularplugin-js": "^3.0.2",
+    "@microsoft/applicationinsights-web": "^2.8.12"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^11.1.1",
