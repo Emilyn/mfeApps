@@ -26,9 +26,7 @@
     "systemjs": "^6.1.4",
     "tslib": "^2.0.0",
     "webpack-merge": "5.7.3",
-    "zone.js": "~0.10.2",
-    "@microsoft/applicationinsights-web": "3.0.2",
-    "@microsoft/applicationinsights-angularplugin-js": "3.0.3"
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^11.1.1",
