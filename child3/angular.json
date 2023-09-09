@@ -111,7 +111,6 @@
       }
     }
   },
-  "defaultProject": "child3",
   "cli": {
     "analytics": false
   }
