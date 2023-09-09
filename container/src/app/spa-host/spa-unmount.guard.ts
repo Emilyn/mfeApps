@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { SpaHostComponent } from './spa-host.component';
 
 @Injectable({ providedIn: 'root' })
-export class SpaUnmountGuard implements CanDeactivate<SpaHostComponent> {
+export class SpaUnmountGuard  {
   canDeactivate(
     component: SpaHostComponent,
     currentRoute: ActivatedRouteSnapshot,
