@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { AngularPlugin } from '@microsoft/applicationinsights-angularplugin-js';
-import { ApplicationInsights, DistributedTracingModes, Telemetry } from '@microsoft/applicationinsights-web';
+import { ApplicationInsights, DistributedTracingModes } from '@microsoft/applicationinsights-web';
 
 
 @Injectable({
