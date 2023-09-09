@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AnalyticsService } from '../services/analytics.service';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'child1-page2',
@@ -11,16 +11,16 @@ export class Page2Component implements OnInit {
 
   validate;
 
-  loginForm: FormGroup;
+  loginForm: UntypedFormGroup;
 
   ngOnInit() {
     this.buildForm();
   }
 
   buildForm() {
-    this.loginForm = new FormGroup({
-      username: new FormControl('', [Validators.required]),
-      password: new FormControl('')
+    this.loginForm = new UntypedFormGroup({
+      username: new UntypedFormControl('', [Validators.required]),
+      password: new UntypedFormControl('')
     })
   }
 
